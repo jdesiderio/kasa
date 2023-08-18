@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// Components
+@import
+  'components/header',
+  'components/footer',
+  'components/button';
+
+// Pages
+@import
+  'pages/home',
+  'pages/error',
+  'pages/about';
+
+
