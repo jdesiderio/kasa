@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass functions.
+// -----------------------------------------------------------------------------
+
+body {
+  margin: 0;
+  font-family: $text-font-stack;
+}
+
+h1 {
+  margin: 0;
+  font-family: $text-font-stack;
+  padding: 0;
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+}

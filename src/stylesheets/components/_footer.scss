@@ -1,3 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 66px;
+  padding-bottom: 13px;
+  img {
+    width: 122px;
+    height: 39px;
+    flex-shrink: 0;
+  }
+  &__txt {
+    color: white;
+    margin-top: 29px;
+  }
+}
