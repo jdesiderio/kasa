@@ -2,25 +2,30 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.banner {
-  position: relative;
-  width: 1240px;
-  height: 223px;
-  flex-shrink: 0;
+.navbar {
+  max-width: 1240px;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 25px;
-  img {
-    width: 1240px;
-    height: 223px;
-    object-fit: cover;
-    border-radius: 25px;
-  }
-  h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+  .navbar__links {
+    width: 310px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul {
+      display: flex;
+      padding: auto;
+      gap: 48px;
+      li {
+        list-style: none;
+        a {
+          font-size: 24px;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
   }
 }

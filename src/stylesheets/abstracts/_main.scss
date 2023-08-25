@@ -9,9 +9,13 @@ body {
 
 h1 {
   margin: 0;
-  font-family: $text-font-stack;
+  color: $secundary-color;
   padding: 0;
-  color: white;
   font-size: 48px;
   font-weight: 500;
+}
+
+p,
+a {
+  color: $text-color;
 }

@@ -1,16 +1,18 @@
-import React from 'react'
-import accommodations from '../logements.json'
+import { useNavigate } from 'react-router-dom'
 
-function Card() {
+function Card(props) {
+  const data = props.data
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate(`/card/${data.id}`)
+  }
+
   return (
-    <>
-      {accommodations.map((accommodation) => (
-        <div className="card" key={accommodation.id}>
-          <img src={accommodation.cover} alt={accommodation.title} />
-          <p>{accommodation.title}</p>
-        </div>
-      ))}
-    </>
+    <div className="card" onClick={handleClick}>
+      <img src={data.cover} alt={data.title} />
+      <h2 className="card__title">{data.title}</h2>
+    </div>
   )
 }
 
