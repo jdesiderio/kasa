@@ -1,0 +1,32 @@
+.info-container {
+  max-width: 1240px;
+  margin: auto;
+  .info__carrousel {
+    height: 415px;
+    max-width: 1240px;
+    img {
+      height: 415px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  }
+  .info__txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .info__section-left + p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .info__collapses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 76px;
+    div {
+      width: 50%;
+    }
+  }
+}

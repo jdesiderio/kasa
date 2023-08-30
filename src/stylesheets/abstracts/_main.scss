@@ -1,5 +1,5 @@
 // -----------------------------------------------------------------------------
-// This file contains all application-wide Sass functions.
+// This file contains all application-wide Sass styles.
 // -----------------------------------------------------------------------------
 
 body {
@@ -8,11 +8,20 @@ body {
 }
 
 h1 {
-  margin: 0;
   color: $secundary-color;
   padding: 0;
+  margin: 0;
   font-size: 48px;
   font-weight: 500;
+}
+
+h2 {
+  color: $text-color;
+  font-size: 36px;
+  font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  margin: 0;
 }
 
 p,

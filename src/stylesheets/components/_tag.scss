@@ -1,0 +1,22 @@
+.info__section-left--tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  .tag {
+    width: 115px;
+    height: 25px;
+    background-color: $text-color;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: $secundary-color;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}
