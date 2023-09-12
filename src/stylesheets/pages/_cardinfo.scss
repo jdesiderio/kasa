@@ -21,12 +21,11 @@
     }
   }
   .info__collapses {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 76px;
-    div {
-      width: 50%;
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 76px;
+    grid-row-gap: 30px;
+    padding-bottom: 30px;
   }
 }
