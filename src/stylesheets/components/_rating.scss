@@ -1,0 +1,13 @@
+.info__section-right--rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 200px;
+  gap: 5px;
+  .full-star {
+    color: $text-color;
+  }
+  .empty-star {
+    color: #e3e3e3;
+  }
+}

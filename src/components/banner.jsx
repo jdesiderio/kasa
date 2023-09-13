@@ -12,13 +12,13 @@ function Banner() {
     <div className="banner">
       {isHomePage && (
         <div>
-          <img src={banner} alt="falaises" />
+          <img className="home__banner" src={banner} alt="falaises" />
           <h1>Chez vous, partout et ailleurs</h1>
         </div>
       )}
       {isAboutPage && (
         <div>
-          <img src={banner2} alt="montagnes" />
+          <img className="about__banner" src={banner2} alt="montagnes" />
         </div>
       )}
     </div>

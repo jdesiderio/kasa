@@ -1,10 +1,17 @@
 .about-container {
   margin: auto;
   max-width: 1240px;
-  div {
+  @media screen and (max-width: map-get($breakpoints, 'large')) {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .collapse {
     max-width: 1023px;
-    padding-bottom: 30px;
     margin: auto;
     position: relative;
+    margin-bottom: 30px;
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+      margin-bottom: 20px;
+    }
   }
 }

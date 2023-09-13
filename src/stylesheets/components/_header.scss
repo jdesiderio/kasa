@@ -8,6 +8,13 @@
   margin-top: 45px;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: map-get($breakpoints, 'large')) {
+    margin-left: 25px;
+    margin-right: 25px;
+    img {
+      height: 47px;
+    }
+  }
   .navbar__links {
     width: 310px;
     display: flex;
@@ -17,6 +24,9 @@
       display: flex;
       padding: auto;
       gap: 48px;
+      @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        gap: 26px;
+      }
       li {
         list-style: none;
         a {
@@ -24,6 +34,10 @@
           text-decoration: none;
           display: flex;
           align-items: center;
+          @media screen and (max-width: map-get($breakpoints, 'medium')) {
+            font-size: 12px;
+            text-transform: uppercase;
+          }
         }
       }
     }

@@ -1,35 +1,40 @@
-import React, { useEffect, useState } from "react"
-import accommodations from '../logements.json'
+import React, { useState } from 'react'
+import arrowLeft from '../assets/img/arrow-left.svg'
+import arrowRight from '../assets/img/arrow-right.svg'
 
-function Carousel() {
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const infiniteScroll = () => {
-        if (currentIndex === accommodations.pictures.length-1) {
-            return setCurrentIndex(0)
-        }
-        return setCurrentIndex(currentIndex+1)
-    }
+function Carousel(props) {
+  const [currentIndex, setCurrentIndex] = useState(0)
 
-    useEffect(() => {
-        
-    }
-    
-    )
+  const handleNext = () => {
+    setCurrentIndex((currentIndex + 1) % props.data.length)
+  }
 
- 
+  const handlePrev = () => {
+    setCurrentIndex((currentIndex - 1 + props.data.length) % props.data.length)
+  }
 
-    return (
-        <div className="info__carousel">
-            { accommodations.pictures.map((picture, index) => {
-                <div key={index}>
-                    <img  alt="images du logement" src={picture} />
-                    <h4>{index + 1}/{accommodations.pictures.length}</h4>
-                </div>
-            })
-            }
-
+  return (
+    <div className="info__carousel">
+      {props.data.map((picture, index) => (
+        <div
+          key={index}
+          style={{ display: index === currentIndex ? 'block' : 'none' }}
+          className="carousel--img"
+        >
+          <img alt="images du logement" src={picture} />
+          <h4>
+            {index + 1}/{props.data.length}
+          </h4>
         </div>
-    )
+      ))}
+      <button onClick={handlePrev} className="carousel--button">
+        <img src={arrowLeft} alt="changer" />
+      </button>
+      <button onClick={handleNext} className="carousel--button">
+        <img src={arrowRight} alt="changer" />
+      </button>
+    </div>
+  )
 }
 
 export default Carousel

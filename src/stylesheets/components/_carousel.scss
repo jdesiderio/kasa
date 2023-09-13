@@ -1,0 +1,47 @@
+.info__carousel {
+  position: relative;
+  height: 415px;
+  max-width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+  .carousel--img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 415px;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    img {
+      border-radius: 25px;
+      object-fit: cover;
+      height: 415px;
+      width: 100%;
+    }
+    h4 {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 5px 10px;
+    }
+  }
+  .carousel--button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .carousel--button:first-child {
+    left: 10px;
+  }
+  .carousel--button:last-child {
+    right: 10px;
+  }
+}

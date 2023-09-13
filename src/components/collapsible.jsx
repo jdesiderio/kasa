@@ -8,7 +8,7 @@ const Collapsible = (props) => {
   }
 
   return (
-    <div className='collapse'>
+    <div className="collapse">
       <button className={open ? 'open' : ''} onClick={toggle}>
         {props.label}
         <img

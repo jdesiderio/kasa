@@ -1,6 +1,8 @@
 import accommodations from '../logements.json'
 import Tag from '../components/tag'
 import Collapsible from '../components/collapsible'
+import Carousel from '../components/carousel'
+import Rating from '../components/rating'
 import { useParams, Navigate } from 'react-router-dom'
 
 function CardInfo() {
@@ -15,9 +17,7 @@ function CardInfo() {
 
   return (
     <div className="info-container">
-      <div className="info__carrousel">
-        <img src={selectedId.cover} alt={selectedId.title} />
-      </div>
+      <Carousel data={selectedId.pictures} />
       <section className="info__txt">
         <div className="info__section-left">
           <h2>{selectedId.title}</h2>
@@ -29,7 +29,7 @@ function CardInfo() {
             <p>{selectedId.host.name}</p>
             <img src={selectedId.host.picture} alt={selectedId.host.name} />
           </div>
-          <div className="info__section-right--rating"></div>
+          <Rating data={selectedId.rating} />
         </div>
       </section>
       <div className="info__collapses">
