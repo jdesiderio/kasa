@@ -16,8 +16,8 @@
   grid-row-gap: 50px;
   padding: 50px;
   @media screen and (max-width: map-get($breakpoints, 'large')) {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     background: $secundary-color;
     padding: 0;
   }

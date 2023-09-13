@@ -2,6 +2,9 @@
   max-width: 100%;
   position: relative;
   padding: 25px 0 35px 0;
+  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+    padding: 10px 0 20px 0;
+  }
   button {
     position: absolute;
     top: 0;
@@ -19,8 +22,17 @@
     justify-content: space-between;
     align-items: center;
     transition: box-shadow, transform 6000ms ease;
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+      font-size: 13px;
+      height: 30px;
+    }
     img {
       transition: transform 0.3s ease;
+      @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        width: 16px;
+        height: 16px;
+        padding-right: 10px;
+      }
     }
     &.open {
       box-shadow: none;
@@ -37,9 +49,15 @@
     display: flex;
     align-items: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+      padding: 43px 20px 19px 20px;
+    }
     p {
       margin: 0;
       font-size: 18px;
+      @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        font-size: 12px;
+      }
     }
     ul {
       padding: 0;
@@ -49,6 +67,9 @@
         color: $text-color;
         font-size: 18px;
         line-height: 142%;
+        @media screen and (max-width: map-get($breakpoints, 'medium')) {
+          font-size: 12px;
+        }
       }
     }
   }

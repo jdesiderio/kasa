@@ -4,6 +4,12 @@
   justify-content: flex-end;
   width: 200px;
   gap: 5px;
+  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+    justify-content: flex-start;
+    .fa-star {
+      font-size: 18px;
+    }
+  }
   .full-star {
     color: $text-color;
   }

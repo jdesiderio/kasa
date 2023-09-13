@@ -1,6 +1,9 @@
 .info__carousel {
   position: relative;
   height: 415px;
+  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+    height: 255px;
+  }
   max-width: 1240px;
   margin: 0 auto;
   overflow: hidden;
@@ -11,11 +14,17 @@
     height: 415px;
     width: 100%;
     transition: opacity 0.3s ease-in-out;
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+      height: 255px;
+    }
     img {
       border-radius: 25px;
       object-fit: cover;
       height: 415px;
       width: 100%;
+      @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        height: 255px;
+      }
     }
     h4 {
       position: absolute;
@@ -23,6 +32,10 @@
       left: 50%;
       transform: translateX(-50%);
       padding: 5px 10px;
+      @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        padding: 0;
+        margin: 0;
+      }
     }
   }
   .carousel--button {
@@ -36,6 +49,10 @@
     img {
       width: 80px;
       height: 80px;
+      @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
   .carousel--button:first-child {

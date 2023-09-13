@@ -4,8 +4,12 @@
   gap: 10px;
   margin-top: 24px;
   margin-bottom: 24px;
+  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
   .tag {
-    width: 150px;
+    width: 170px;
     height: 25px;
     background-color: $text-color;
     border-radius: 10px;
@@ -17,6 +21,9 @@
       color: $secundary-color;
       font-size: 14px;
       margin: 0;
+      @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        font-size: 10px;
+      }
     }
   }
 }

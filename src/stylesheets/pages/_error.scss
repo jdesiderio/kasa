@@ -10,18 +10,37 @@
   gap: 80px;
   padding-top: 80px;
   padding-bottom: 80px;
+  @media screen and (max-width: map-get($breakpoints, 'large')) {
+    gap: 112px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .error-type {
     font-weight: 700;
     font-size: 288px;
     padding: 0;
     margin: 0;
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+      font-size: 96px;
+    }
   }
   .error-txt {
     font-size: 36px;
     margin: 0;
     text-align: center;
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+      font-size: 18px;
+      line-height: 142.6%;
+      max-width: 260px;
+    }
   }
   a {
     font-size: 18px;
+    text-align: center;
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+      font-size: 14px;
+    }
   }
 }
