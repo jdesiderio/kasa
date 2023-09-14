@@ -22,9 +22,9 @@ function Carousel(props) {
           className="carousel--img"
         >
           <img alt="images du logement" src={picture} />
-          <h4>
+          <h3>
             {index + 1}/{props.data.length}
-          </h4>
+          </h3>
         </div>
       ))}
       <button onClick={handlePrev} className="carousel--button">

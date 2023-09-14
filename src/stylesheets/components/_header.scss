@@ -30,12 +30,12 @@
       li {
         list-style: none;
         a {
-          font-size: 24px;
+          font-size: 1.5em;
           text-decoration: none;
           display: flex;
           align-items: center;
           @media screen and (max-width: map-get($breakpoints, 'medium')) {
-            font-size: 12px;
+            font-size: 0.75em;
             text-transform: uppercase;
           }
         }
@@ -45,5 +45,5 @@
 }
 
 .current {
-  border-bottom: solid 1px $text-color;
+  border-bottom: solid 1px $primary-color;
 }

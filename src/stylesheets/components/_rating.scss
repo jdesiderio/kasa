@@ -7,11 +7,11 @@
   @media screen and (max-width: map-get($breakpoints, 'medium')) {
     justify-content: flex-start;
     .fa-star {
-      font-size: 18px;
+      font-size: 1.125em;
     }
   }
   .full-star {
-    color: $text-color;
+    color: $primary-color;
   }
   .empty-star {
     color: #e3e3e3;

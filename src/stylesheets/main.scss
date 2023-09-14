@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 // Configuration and helpers
-@import 'abstracts/variables', 'abstracts/main';
+@import 'abstracts/variables', 'abstracts/global';
+
+// Pages
+@import 'pages/home', 'pages/error', 'pages/about', 'pages/cardinfo';
 
 // Components
 @import 'components/header', 'components/banner', 'components/footer',
   'components/card', 'components/carousel', 'components/collapsible',
   'components/tag', 'components/rating';
-
-// Pages
-@import 'pages/home', 'pages/error', 'pages/about', 'pages/cardinfo';

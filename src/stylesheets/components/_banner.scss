@@ -22,19 +22,5 @@
     .home__banner {
       height: 111px;
     }
-    .about__banner {
-      height: 223px;
-    }
-  }
-  h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
-    @media screen and (max-width: map-get($breakpoints, 'medium')) {
-      font-size: 24px;
-      white-space: wrap;
-    }
   }
 }

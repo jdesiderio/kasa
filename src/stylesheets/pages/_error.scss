@@ -19,28 +19,28 @@
   }
   .error-type {
     font-weight: 700;
-    font-size: 288px;
+    font-size: 18em;
     padding: 0;
     margin: 0;
     @media screen and (max-width: map-get($breakpoints, 'medium')) {
-      font-size: 96px;
+      font-size: 6em;
     }
   }
   .error-txt {
-    font-size: 36px;
+    font-size: 2.25em;
     margin: 0;
     text-align: center;
     @media screen and (max-width: map-get($breakpoints, 'medium')) {
-      font-size: 18px;
+      font-size: 1.125em;
       line-height: 142.6%;
       max-width: 260px;
     }
   }
   a {
-    font-size: 18px;
+    font-size: 1.125em;
     text-align: center;
     @media screen and (max-width: map-get($breakpoints, 'medium')) {
-      font-size: 14px;
+      font-size: 0.875em;
     }
   }
 }

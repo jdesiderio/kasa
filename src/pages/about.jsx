@@ -2,7 +2,7 @@ import Collapsible from '../components/collapsible'
 
 function About() {
   return (
-    <div className="about-container">
+    <div className="about__container">
       <Collapsible label="Fiabilité">
         <div>
           <p>

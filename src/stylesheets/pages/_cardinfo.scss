@@ -1,9 +1,11 @@
 .info-container {
   max-width: 1240px;
   margin: auto;
+  padding-bottom: 90px;
   @media screen and (max-width: map-get($breakpoints, 'large')) {
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 60px;
   }
   .info__txt {
     display: flex;
@@ -15,9 +17,9 @@
     .info__section-left > p {
       padding: 0;
       margin: 0;
-      font-size: 18px;
+      font-size: 1.125em;
       @media screen and (max-width: map-get($breakpoints, 'medium')) {
-        font-size: 14px;
+        font-size: 0.875em;
         margin: 5px 0 5px 0;
       }
     }
@@ -33,11 +35,11 @@
           padding: 0;
         }
         p {
-          font-size: 18px;
+          font-size: 1.125em;
           max-width: 90px;
           text-align: end;
           @media screen and (max-width: map-get($breakpoints, 'medium')) {
-            font-size: 12px;
+            font-size: 0.75em;
             max-width: 60px;
           }
         }
@@ -70,7 +72,7 @@
     @media screen and (max-width: map-get($breakpoints, 'medium')) {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 1fr);
-      grid-row-gap: 20px;
+      grid-row-gap: 45px;
     }
   }
 }
