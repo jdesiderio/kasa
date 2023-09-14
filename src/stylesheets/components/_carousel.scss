@@ -24,6 +24,7 @@
       width: 100%;
       @media screen and (max-width: map-get($breakpoints, 'medium')) {
         height: 255px;
+        border-radius: 10px;
       }
     }
     h4 {

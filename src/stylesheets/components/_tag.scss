@@ -17,6 +17,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+      border-radius: 5px;
+    }
     p {
       color: $secundary-color;
       font-size: 14px;

@@ -29,7 +29,7 @@ function CardInfo() {
             <p>{selectedId.host.name}</p>
             <img src={selectedId.host.picture} alt={selectedId.host.name} />
           </div>
-          <Rating data={selectedId.rating} />
+          <Rating rating={selectedId.rating} />
         </div>
       </section>
       <div className="info__collapses">

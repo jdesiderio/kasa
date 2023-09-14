@@ -25,6 +25,7 @@
     @media screen and (max-width: map-get($breakpoints, 'medium')) {
       font-size: 13px;
       height: 30px;
+      border-radius: 5px;
     }
     img {
       transition: transform 0.3s ease;
@@ -55,6 +56,7 @@
     p {
       margin: 0;
       font-size: 18px;
+      animation: slideIn 0.5s ease forwards;
       @media screen and (max-width: map-get($breakpoints, 'medium')) {
         font-size: 12px;
       }
@@ -67,10 +69,22 @@
         color: $text-color;
         font-size: 18px;
         line-height: 142%;
+        animation: slideIn 0.5s ease forwards;
         @media screen and (max-width: map-get($breakpoints, 'medium')) {
           font-size: 12px;
         }
       }
     }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
