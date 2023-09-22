@@ -1,12 +1,11 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-@import '../abstracts/_variables.scss';
 
 .main-container {
   border-radius: 25px;
   background: $tertiary-color;
-  max-width: 90%;
+  max-width: 80%;
   margin: auto;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -16,12 +15,14 @@
   grid-row-gap: 50px;
   padding: 50px;
   @media screen and (max-width: map-get($breakpoints, 'large')) {
-    margin-left: 20px;
-    margin-right: 20px;
+    max-width: 87.5%;
+  }
+  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+    margin-top: 20px;
     background: $secundary-color;
     padding: 0;
   }
-  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+  @media screen and (max-width: map-get($breakpoints, 'small')) {
     grid-template-columns: 1fr;
     grid-row-gap: 20px;
   }

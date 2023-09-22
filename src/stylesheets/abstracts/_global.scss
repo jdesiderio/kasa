@@ -2,16 +2,19 @@
 // This file contains all application-wide Sass styles.
 // -----------------------------------------------------------------------------
 
+// Importation des polices Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
 * {
   box-sizing: border-box;
   font-family: $text-font-stack, sans-serif;
 }
 
 body {
-  margin: auto;
-  max-width: 1440px;
+  margin: 0;
 }
 
+// titres
 h1,
 h2,
 h3,
@@ -29,7 +32,7 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
-  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+  @media screen and (max-width: map-get($breakpoints, 'small')) {
     font-size: 1.5em;
     white-space: inherit;
   }
@@ -40,7 +43,7 @@ h2 {
   font-size: 2.25em;
   padding-top: 30px;
   padding-bottom: 5px;
-  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+  @media screen and (max-width: map-get($breakpoints, 'small')) {
     font-size: 1.125em;
     padding-top: 10px;
   }
@@ -58,12 +61,13 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   padding: 5px 10px;
-  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+  @media screen and (max-width: map-get($breakpoints, 'small')) {
     font-size: 0.75em;
     padding: 0;
   }
 }
 
+// Liens et textes
 p,
 a {
   color: $primary-color;

@@ -17,7 +17,7 @@
   &__txt {
     color: white;
     margin-top: 29px;
-    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+    @media screen and (max-width: map-get($breakpoints, 'small')) {
       margin-top: 18px;
       font-size: 0.75em;
       text-align: center;

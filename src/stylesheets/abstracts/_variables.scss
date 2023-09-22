@@ -16,7 +16,7 @@ $tertiary-color: #f6f6f6;
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1240px,
+  'small': 768px,
+  'medium': 1024px,
+  'large': 1440px,
 ) !default;

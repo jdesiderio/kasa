@@ -1,7 +1,7 @@
 .collapse {
   width: 100%;
   margin: 15px 0;
-  @media screen and (max-width: map-get($breakpoints, 'medium')) {
+  @media screen and (max-width: map-get($breakpoints, 'small')) {
     margin: 10px 0;
   }
   &__btn {
@@ -16,10 +16,22 @@
     border-radius: 10px;
     width: 100%;
     cursor: pointer;
-    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+    @media screen and (max-width: map-get($breakpoints, 'small')) {
       font-size: 0.875em;
       height: 30px;
       border-radius: 5px;
+    }
+    .toggle-arrow {
+      transform: rotate(0deg);
+      transition: 300ms ease-in-out;
+      @media screen and (max-width: map-get($breakpoints, 'small')) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .rotation {
+      transform: rotate(180deg);
+      transition: 300ms ease-in-out;
     }
   }
 
@@ -29,20 +41,20 @@
     color: $primary-color;
     background: $tertiary-color;
     border-radius: 10px;
-    transition: opacity 400ms ease-in-out, height 400ms 400ms ease-in-out;
-    @media screen and (max-width: map-get($breakpoints, 'medium')) {
+    transition: height 400ms 400ms ease-in-out, opacity 400ms ease-in-out;
+    @media screen and (max-width: map-get($breakpoints, 'small')) {
       border-radius: 5px;
     }
     div {
       margin: 0;
-      padding: 22px 15px;
-      @media screen and (max-width: map-get($breakpoints, 'medium')) {
-        padding: 15px 10px;
+      padding: 10px 15px;
+      @media screen and (max-width: map-get($breakpoints, 'small')) {
+        padding: 8px 10px;
       }
       p,
       ul li {
         font-size: 1.25em;
-        @media screen and (max-width: map-get($breakpoints, 'medium')) {
+        @media screen and (max-width: map-get($breakpoints, 'small')) {
           font-size: 0.875em;
         }
       }
@@ -52,31 +64,9 @@
       }
     }
   }
-  .animated {
+  .animation {
     z-index: 1;
     opacity: 1;
     transition: height 400ms ease-in-out, opacity 400ms 400ms ease-in-out;
-  }
-}
-
-.toggle-arrow {
-  transform: rotate(0deg);
-  transition: 300ms ease-in-out;
-  @media screen and (max-width: map-get($breakpoints, 'medium')) {
-    width: 16px;
-    height: 16px;
-  }
-}
-
-.rotated {
-  transform: rotate(180deg);
-  transition: 300ms ease-in-out;
-}
-
-.collapse-fiche-container {
-  width: 100%;
-
-  @media screen and (max-width: map-get($breakpoints, 'medium')) {
-    margin: 20px 0;
   }
 }

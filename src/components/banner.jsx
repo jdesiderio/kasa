@@ -3,6 +3,7 @@ import banner from '../assets/img/banniere.jpeg'
 import banner2 from '../assets/img/banniere2.jpeg'
 
 function Banner() {
+  // Vérifie la page courante pour afficher la bonne image :
   const location = useLocation()
   const isHomePage = location.pathname === '/'
   const isAboutPage = location.pathname === '/about'

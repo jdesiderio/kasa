@@ -4,9 +4,13 @@ import logo from '../assets/img/LOGO.svg'
 import Banner from './banner'
 
 function Header() {
+  // Utilisation de useLocation pour obtenir l'emplacement actuel
   const location = useLocation()
+
+  // État pour suivre le lien actif
   const [activeLink, setActiveLink] = useState('/')
 
+  // Utilisation de useEffect pour mettre à jour le lien actif lorsque l'emplacement change
   useEffect(() => {
     setActiveLink(location.pathname)
   }, [location])
@@ -27,7 +31,7 @@ function Header() {
                 to="/about"
                 className={activeLink === '/about' ? 'current' : ''}
               >
-                A propos
+                À propos
               </Link>
             </li>
           </ul>

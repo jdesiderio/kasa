@@ -6,11 +6,12 @@ import Rating from '../components/rating'
 import { useParams, Navigate } from 'react-router-dom'
 
 function CardInfo() {
-  const { id } = useParams()
+  const { id } = useParams() // Récupère le paramètre "id" de l'URL grâce à useParams
   const selectedId = accommodations.find(
     (accommodation) => accommodation.id === id
   )
 
+  // Si aucun logement correspondant n'est trouvé, redirige vers la page d'erreur
   if (!selectedId) {
     return <Navigate to="/error" />
   }
