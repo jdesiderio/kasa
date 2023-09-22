@@ -1,3 +1,7 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the collapsible menu of the site.
+// -----------------------------------------------------------------------------
+
 .collapse {
   width: 100%;
   margin: 15px 0;
@@ -13,13 +17,12 @@
     color: $secundary-color;
     height: 52px;
     padding: 7px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100%;
     cursor: pointer;
     @media screen and (max-width: map-get($breakpoints, 'small')) {
       font-size: 0.875em;
       height: 30px;
-      border-radius: 5px;
     }
     .toggle-arrow {
       transform: rotate(0deg);
@@ -40,11 +43,8 @@
     z-index: 0;
     color: $primary-color;
     background: $tertiary-color;
-    border-radius: 10px;
-    transition: height 400ms 400ms ease-in-out, opacity 400ms ease-in-out;
-    @media screen and (max-width: map-get($breakpoints, 'small')) {
-      border-radius: 5px;
-    }
+    border-radius: 5px;
+    transition: height 400ms 200ms ease-in-out, opacity 400ms ease-in-out;
     div {
       margin: 0;
       padding: 10px 15px;
@@ -67,6 +67,6 @@
   .animation {
     z-index: 1;
     opacity: 1;
-    transition: height 400ms ease-in-out, opacity 400ms 400ms ease-in-out;
+    transition: height 200ms ease-in-out, opacity 400ms 400ms ease-in-out;
   }
 }
