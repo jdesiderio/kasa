@@ -1,4 +1,3 @@
-import React from 'react'
 import { useLocation } from 'react-router-dom'
 import banner from '../assets/img/banniere.jpeg'
 import banner2 from '../assets/img/banniere2.jpeg'

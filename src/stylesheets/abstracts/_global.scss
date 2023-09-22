@@ -2,14 +2,20 @@
 // This file contains all application-wide Sass styles.
 // -----------------------------------------------------------------------------
 
+* {
+  box-sizing: border-box;
+  font-family: $text-font-stack, sans-serif;
+}
+
 body {
-  margin: 0;
-  font-family: $text-font-stack;
+  margin: auto;
+  max-width: 1440px;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0;
   font-weight: 500;
 }
@@ -40,9 +46,13 @@ h2 {
   }
 }
 
-h3 {
+h3,
+h4 {
   color: $secundary-color;
   font-size: 1.125em;
+}
+
+h3 {
   position: absolute;
   bottom: 10px;
   left: 50%;
