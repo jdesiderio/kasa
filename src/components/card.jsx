@@ -5,7 +5,7 @@ function Card(props) {
   const navigate = useNavigate() // Utilisation du hook de navigation pour rediriger vers une autre page
 
   const handleClick = () => {
-    navigate(`/card/${data.id}`) // Au clic sur la carte, naviguer vers la page détaillée de la carte en utilisant l'ID de la carte
+    navigate(`./card/${data.id}`) // Au clic sur la carte, naviguer vers la page détaillée de la carte en utilisant l'ID de la carte
   }
 
   return (

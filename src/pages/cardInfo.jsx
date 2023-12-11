@@ -13,7 +13,7 @@ function CardInfo() {
 
   // Si aucun logement correspondant n'est trouvé, redirige vers la page d'erreur
   if (!selectedId) {
-    return <Navigate to="/error" />
+    return <Navigate to="./error" />
   }
 
   return (

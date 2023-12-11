@@ -22,13 +22,13 @@ function Header() {
         <nav className="navbar__links">
           <ul>
             <li>
-              <Link to="/" className={activeLink === '/' ? 'current' : ''}>
+              <Link to="./" className={activeLink === '/' ? 'current' : ''}>
                 Accueil
               </Link>
             </li>
             <li>
               <Link
-                to="/about"
+                to="./about"
                 className={activeLink === '/about' ? 'current' : ''}
               >
                 À propos
