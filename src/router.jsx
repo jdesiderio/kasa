@@ -11,10 +11,10 @@ function AppRouter() {
     <Router>
       <Header />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/card/:id" element={<CardInfo />} />
-        <Route path="*" element={<Error />} />
+        <Route exact path="/kasa" element={<Home />} />
+        <Route path="/kasa/about" element={<About />} />
+        <Route path="/kasa/card/:id" element={<CardInfo />} />
+        <Route path="/kasa/*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>
